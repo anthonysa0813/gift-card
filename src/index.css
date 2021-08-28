@@ -1,13 +1,66 @@
 body {
+  font-family: "Roboto", sans-serif;
+  /* padding: 30px; */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+header {
+  padding: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+  width: 60%;
+  padding: 15px 20px;
+  border-radius: 1rem;
+  border: none;
+  border: 1px solid #ddd;
+  margin-right: 1rem;
+}
+
+button[type="submit"] {
+  margin-left: 0;
+  margin-top: 1rem;
+  padding: 15px 20px;
+  border: none;
+  color: white;
+  background-color: rgba(54, 236, 175, 0.801);
+  border-radius: 0.5rem;
+}
+
+button[type="submit"]:active {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 1rem;
+  margin: 0 auto;
+  width: 90%;
+  justify-content: center;
+}
+
+.container-card {
+  border: 1px solid black;
+  max-width: 300px;
+  height: 280px;
+  border-radius: 1rem;
+  text-align: center;
+}
+.container-images {
+  max-width: inherit;
+}
+
+.container-images img {
+  max-width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+@media screen and (min-width: 580px) {
+  button[type="submit"] {
+    margin-left: 2rem;
+  }
 }
